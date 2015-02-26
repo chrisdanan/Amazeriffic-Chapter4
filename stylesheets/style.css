@@ -1,0 +1,160 @@
+/*Stylesheet for index.html*/
+
+body{
+	background-color: #f9e933;
+	font-family: "Droid Sans", sans-serif;
+	font-size: 100%;
+}
+
+header, main, footer{
+	min-width: 855px;
+	overflow: auto;
+}
+
+/*Allow header, main, and footer sections to be moved*/
+header .container, main .container, footer .container{
+	max-width: 855px;
+	margin: auto;
+	/*overflow: auto;*/
+	/*border: 1px dashed red;*/
+}
+
+header{
+	background-color: white;
+	/*overflow: auto;*/
+}
+
+header h1{
+	float: left;
+	width: 570px;
+}
+
+header nav{
+	float: right;
+	width: 250px;
+	margin-top:30px;
+}
+
+main{
+	background-color: white;
+	overflow: auto;
+}
+
+.mainContentLeft{
+	float: left;
+	width: 570px;
+}
+
+.mainContentRight{
+	float: right;
+	width: 285px;
+}
+
+.question{
+	color: #1897c7;
+}
+footer{
+	overflow: auto;
+}
+
+.contact{
+	float: left;
+	width: 570px;
+}
+
+.contact > p{
+	margin: 0px;
+	padding: 0px;
+}
+
+.sitemap{
+	float: right;
+	width: 285px;
+}
+
+/*subLeft and subRight are used to split the sitemap menu into two columns*/
+.subLeft{
+	float: left;
+}
+
+.subRight{
+	float: right;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h1{
+	font-size: 2.5em;
+}
+
+h2{
+	font-size: 1.7em;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+h4{
+	font-size: 1.3em;
+}
+
+h5{
+	font-size: 1.0em;
+}
+
+h6{
+	font-size: 0.5em;
+}
+
+p{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: red;
+}
+
+/*Underline links when mouse is over them*/
+a:hover{
+	text-decoration: underline;
+}
+
+/*Change color of links that were previously visited*/
+a:visited{
+	color: purple;
+}
+
+/*Italicize and color "Amazeriffic!"*/
+.amazerifficName{
+	color: #b64c4c;
+	font-style: italic;
+}
+
+#reasonHeader{
+	margin-top: 33px;
+}
+
+.reason{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	list-style-type: disc;
+}
+
+img{
+	width: 75%;
+	height: 75%;
+	margin: 33px;
+}
+
+small{
+	font-size:0.5em;
+}
