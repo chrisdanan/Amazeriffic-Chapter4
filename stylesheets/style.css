@@ -149,6 +149,20 @@ a:visited{
 	list-style-type: disc;
 }
 
+.tabs a span{
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	width: 100px;
+	margin-right: 10px;
+	text-align: center;
+	background: #ddd;
+	padding: 5px;
+}
+
+.tabs a span.active{
+	background: #eee;
+}
+
 img{
 	width: 75%;
 	height: 75%;
