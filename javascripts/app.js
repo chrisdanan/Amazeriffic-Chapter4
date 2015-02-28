@@ -1,31 +1,27 @@
 var main = function(){
 	"use strict";
 
-	$(".tabs a:nth-child(1)").on("click", function(){
-		//make all the tabs inactive
+	//Purpose: Make tab active when user clicks on it.
+	var makeTabActive = function(tabNumber){
+		//Make all the tabs inactive.
 		$(".tabs span").removeClass("active");
+		//Make the chosen tab active (indicated by tabNumber).
+		$(".tabs a:nth-child(" + tabNumber + ")	span").addClass("active");
+	}
 
-		//make the first tab active
-		$(".tabs a:nth-child(1) span").addClass("active");
-
-		//empty the main content so we can recreate it
-		$("main .content").empty();
-
-		//return false so we don't follow the link
+	$(".tabs a:nth-child(1)").on("click", function(){
+		makeTabActive(1);
+		//Need to return false, else the listener will make browser follow the link.
 		return false;
 	});
 
 	$(".tabs a:nth-child(2)").on("click", function(){
-		$(".tabs span").removeClass("active");
-		$(".tabs a:nth-child(2) span").addClass("active");
-		$("main .content").empty();
+		makeTabActive(2);
 		return false;
 	});
 
 	$(".tabs a:nth-child(3)").on("click", function(){
-		$(".tabs span").removeClass("active");
-		$(".tabs a:nth-child(3) span").addClass("active");
-		$("main .content").empty();
+		makeTabActive(3);
 		return false;
 	});
 };
