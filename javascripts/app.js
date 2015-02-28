@@ -9,8 +9,8 @@ var main = function(){
 					"Make up some new ToDos",
 					"Get Groceries"
 				], //Array stores oldest items earlier in array.
-	$inputBox = $("<input type='text'>"), //Text box to enter new to-do items.
-	$button = $("<button>Enter</button>"); //Button to submit new to-do items.
+	$inputBox = $("<input type='text' class='inputCommentBox'>"), //Text box to enter new to-do items.
+	$button = $("<button class='inputCommentBtn'>Submit To-Do Item</button>"); //Button to submit new to-do items.
 
 	//Purpose: Add a comment to the to-do list.
 	var addComment = function(){

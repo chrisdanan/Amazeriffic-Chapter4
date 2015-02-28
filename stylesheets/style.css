@@ -155,16 +155,58 @@ a:visited{
 	width: 100px;
 	margin-right: 10px;
 	text-align: center;
-	background: #ddd;
+	/*background: #ddd;*/
+	background-color: #eccccc;
 	padding: 5px;
 }
 
 .tabs a span.active{
-	background: #eee;
+	/*background: #eee;*/
+	background-color: #ecb8b8;
+	margin-top: 33px;
 }
 
 .content{
-	background: #eee;
+	/*background: #eee;*/
+	background-color: #ecb8b8;
+	padding: 10px;
+	margin-bottom: 50px;
+	min-height: 200px;
+}
+
+.content ul li{
+	background-color: #6bd3fb;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.inputCommentBox{
+	border: none;
+	border-radius: 5px;
+	/*Allow input box to be centered*/
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	/********************************/
+	font-size: 1.1em;
+}
+
+.inputCommentBtn{
+	background-color: #84f979;
+	border: none;
+	border-radius: 5px;
+	/*Allow submit button to be centered*/
+	display: block;
+	margin: auto;
+	/*********************************/
+	font-size: 1.1em;
+}
+
+.inputCommentBtn:hover{
+	cursor: pointer;
 }
 
 img{
