@@ -1,16 +1,24 @@
 var main = function(){
 	"use strict";
 
-	var tabNumber, //Holds the tab that is clicked.
-	toDos = [
+	var toDos = [
 					"Finish writing this book",
 					"Take Vane to the park",
 					"Answer emails",
 					"Prep for Monday's class",
 					"Make up some new ToDos",
 					"Get Groceries"
-				]; //Array stores oldest items earlier in array.
+				], //Array stores oldest items earlier in array.
+	$inputBox = $("<input type='text'>"), //Text box to enter new to-do items.
+	$button = $("<button>Enter</button>"); //Button to submit new to-do items.
 
+	//Purpose: Add a comment to the to-do list.
+	var addComment = function(){
+		if($inputBox.val() !== ""){
+			toDos.push($inputBox.val());
+			$inputBox.val("");
+		}
+	};
 
 	//Array = [span.active, span, span].
 	$(".tabs a span").toArray().forEach(function(element){
@@ -21,8 +29,6 @@ var main = function(){
 										so we don't need to keep recreating it.
 										*/
 				$content, //Hold to-do lists.
-				$inputBox = $("<input type='text'>"), //Used to enter new to-do items.
-				$button = $("<button>Enter</button>"), //Used to submit new to-do items.
 				i; //Loop increment.
 				
 			//Remove "active" class from all tags.
@@ -57,20 +63,12 @@ var main = function(){
 			//"Add" Tab
 			} else if ($element.parent().is(":nth-child(3)")){
 				$button.on("click", function(){
-					//Ensure that there is no empty input.
-					if($inputBox.val() !== ""){
-						toDos.push($inputBox.val());
-						$inputBox.val("");
-					}
+					addComment();
 				});
 
 				$inputBox.on("keypress", function(event){
 					if(event.keyCode == 13){
-						//Ensure that there is no empty input.
-						if($inputBox.val() !== ""){
-							toDos.push($inputBox.val());
-							$inputBox.val("");
-						}
+						addComment();
 					}
 				});
 
