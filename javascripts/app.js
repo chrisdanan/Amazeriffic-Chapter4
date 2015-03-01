@@ -1,3 +1,14 @@
+/*
+ *Name: Christopher Dancarlo Danan
+ *Created: February 28, 2015
+ *Modified: February 28, 2015
+ *Purpose: Give functionality to tabs and to-do lists for main page of Amazeriffic.
+*/
+
+//The following comes from Professor Avery.  It configures JSHint.
+// Client-side code
+/* jshint browser: true, jquery: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, strict: true, undef: true, unused: true */
+
 var main = function(){
 	"use strict";
 
@@ -67,7 +78,7 @@ var main = function(){
 				});
 
 				$inputBox.on("keypress", function(event){
-					if(event.keyCode == 13){
+					if(event.keyCode === 13){
 						addComment();
 					}
 				});
