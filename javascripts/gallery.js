@@ -21,6 +21,7 @@ var main = function(){
 		transition: "fade", //Use the fade animation.
 		speed: 500, //Set speed of fade animation (in milliseconds).
 		opacity: 0.5, //Set the opacity of the overlay.
+		open: true,
 
 		//Create a slideshow of the screenshots.
 		slideshow: true,  //Add an automatic slideshow.

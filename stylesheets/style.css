@@ -209,10 +209,26 @@ a:visited{
 	cursor: pointer;
 }
 
+/*
 img{
 	width: 75%;
 	height: 75%;
 	margin: 33px;
+}*/
+
+
+.gallery p{
+	padding: 10px;
+	display: inline;
+}
+
+.screenshot{
+	border: 3px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 20%;
+	height: 20%;
+	display: inline-block;
 }
 
 small{
