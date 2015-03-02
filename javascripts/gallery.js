@@ -13,7 +13,7 @@
 /* jshint browser: true, jquery: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, strict: true, undef: true, unused: true */
 
 var main = function(){
-	"use strict"
+	"use strict";
 
 	$("a.gal").colorbox({
 		rel: "a.gal", //Make a slideshow of all <a> elements with the "gal" class.
