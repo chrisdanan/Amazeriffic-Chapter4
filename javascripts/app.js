@@ -89,6 +89,12 @@ var main = function(){
 
 				console.log("Third tab clicked");
 			}
+			else if($element.parent().is(":nth-child(4)")){
+				$("Main .content").append($("<div class='linkDiv'>"));
+				$("Main .content .linkDiv").append($("<a href='colorbox_demo.html' id='slideshowLink'>Take Me to the Slideshow!</a>"));
+
+				console.log("Fourth tab clicked");
+			}
 			//Make browser not follow the link.
 			return false;
 		});//End click handler.
