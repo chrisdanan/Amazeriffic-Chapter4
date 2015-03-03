@@ -91,7 +91,14 @@ var main = function(){
 			}
 			//"Demonstration Tab"
 			else if($element.parent().is(":nth-child(4)")){
-				
+				$("Main .content").append($("<h2>").text("Screenshots"));
+				$("Main .content").append($("<p>").text("Click an image to start the slideshow."))
+				$("Main .content").append($("<div class='gallery'>"));
+				$("Main .content .gallery").append($("<p><a class = 'gal' href='images/Amazeriffic_Tabs_1.png' title='Amazeriffic app: default initial list'><img src='images/Amazeriffic_Tabs_1.png' alt='Screenshot 1 of Amazeriffic in action' width='2628' height='17781' class='screenshot'/></a></p>"));
+				$("Main .content .gallery").append($("<p><a class = 'gal' href='images/Amazeriffic_Tabs_2.png' title='Amazeriffic app: inputting a new to-do list item'><img src='images/Amazeriffic_Tabs_2.png' alt='Screenshot 2 of Amazeriffic in action' width='2628' height='1778' class='screenshot'/></a></p>"));
+				$("Main .content .gallery").append($("<p><a class = 'gal' href='images/Amazeriffic_Tabs_3.png' title='Amazeriffic app: newly created item successfully shows in the list'><img src='images/Amazeriffic_Tabs_3.png' alt='Screenshot 3 of Amazeriffic in action' width='2628' height='1778' class='screenshot'/></a></p>"));
+				$("Main .content .gallery").append($("<p><a class = 'gal' href='images/Amazeriffic_Tabs_4.png' title='Amazeriffic app: newly created item also shows in 'Oldest' tab'><img src='images/Amazeriffic_Tabs_4.png' alt='Screenshot 4 of Amazeriffic in action' width='2628' height='1778' class='screenshot'/></a></p>"));
+				$("Main .content").append($("</div>"));
 
 				console.log("Fourth tab clicked");
 			}
