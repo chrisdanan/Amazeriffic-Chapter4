@@ -100,6 +100,20 @@ var main = function(){
 				$("Main .content .gallery").append($("<p><a class = 'gal' href='images/Amazeriffic_Tabs_4.png' title='Amazeriffic app: newly created item also shows in 'Oldest' tab'><img src='images/Amazeriffic_Tabs_4.png' alt='Screenshot 4 of Amazeriffic in action' width='2628' height='1778' class='screenshot'/></a></p>"));
 				$("Main .content").append($("</div>"));
 
+				//Fire the slideshow when the Demonstration Tab is clicked.
+				$("a.gal").colorbox({
+					rel: "a.gal", //Make a slideshow of all <a> elements with the "gal" class.
+					width: "75%", //Set the size of the slideshow.
+					transition: "fade", //Use the fade animation.
+					speed: 500, //Set speed of fade animation (in milliseconds).
+					opacity: 0.5, //Set the opacity of the overlay.
+					open: true,
+
+					//Create a slideshow of the screenshots.
+					slideshow: true,  //Add an automatic slideshow.
+					slideshowSpeed: 5000, //Set speed of slideshow to 5000 milliseconds.
+				});
+				
 				console.log("Fourth tab clicked");
 			}
 			//Make browser not follow the link.
