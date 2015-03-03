@@ -1,7 +1,7 @@
 /*
  *Name: Christopher Dancarlo Danan
  *Created: February 28, 2015
- *Modified: February 28, 2015
+ *Modified: March 3, 2015
  *Purpose: Give functionality to tabs and to-do lists for main page of Amazeriffic.
 */
 
@@ -89,9 +89,9 @@ var main = function(){
 
 				console.log("Third tab clicked");
 			}
+			//"Demonstration Tab"
 			else if($element.parent().is(":nth-child(4)")){
-				$("Main .content").append($("<div class='linkDiv'>"));
-				$("Main .content .linkDiv").append($("<a href='colorbox_demo.html' id='slideshowLink'>Take Me to the Slideshow!</a>"));
+				
 
 				console.log("Fourth tab clicked");
 			}
